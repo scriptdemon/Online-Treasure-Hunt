@@ -1,0 +1,201 @@
+#title
+{
+	font-family: 'Joti One', cursive;
+}
+
+@media (max-width: @screen-xs) {
+	#title_caps
+	{
+	font-size: 20px;
+	}
+}
+
+@media (max-width: @screen-sm) {
+    #title_caps
+	{
+		font-size: 40px;
+	}
+}
+
+@media (max-width: @screen-lg) {
+    #title_caps
+	{
+		font-size: 60px;
+	}
+}
+
+.member
+{
+	background-image:url("images/image5.jpg");
+	background-size:100% 100%;
+}
+
+
+#sign_up
+{
+	background-color:transparent !important;
+}
+
+#sign_in
+{
+	background-color:transparent !important;
+}
+
+#logo
+{
+	height:100px;
+	width:150px;
+	transition:transform 0.5s,width 2s,height 2s;
+}
+
+#logo:hover
+{
+	height:200px;
+	width:400px;
+	transform: rotate(360deg);
+}
+
+
+#footer
+{
+	
+}
+
+#facebook_link:hover
+{
+	color:blue;
+}
+
+#youtube_link
+{
+	margin-left:10px;
+}
+
+#youtube_link:hover
+{
+	color:rgb(255, 0, 0);
+}
+
+#instagram_link
+{
+	margin-left:10px;
+}
+
+.player_live
+{
+	cursor:pointer;
+}
+
+.player_substitute
+{
+	cursor:pointer;
+}
+
+.select_player
+{
+    cursor: pointer;
+}
+
+#status_for_changes,#status_for_transfer,#player_add_status,#player_selection_comment
+{
+	animation-name:status_effects;
+	animation-duration:4s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	-webkit-animation-name:status_effects;
+	-webkit-animation-duration:4s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+}
+
+@keyframes status_effects
+{
+	0%   {background-color: #D70B48;}
+    25%  {background-color: #5426BF;}
+    50%  {background-color: #01928C;}
+    100% {background-color: #C88C06;}
+}
+
+@-webkit-keyframes status_effects
+{
+	0%   {background-color: #D70B48;}
+    25%  {background-color: #5426BF;}
+    50%  {background-color: #01928C;}
+    100% {background-color: #C88C06;}
+}
+
+#grad {
+    background: #610CAB; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#610CAB, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#610CAB, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#610CAB, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#610CAB, white); /* Standard syntax */
+}
+
+#players_for_selection_div
+{
+	background: #E02261; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#E02261, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#E02261, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#E02261, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#E02261, white); /* Standard syntax */
+}
+
+td
+{
+	vertical-align:middle;
+}
+
+.player_for_transfer:hover
+{
+	cursor:pointer;
+}
+
+.stat_players:hover
+{
+	cursor:pointer;
+}
+
+.players_selected_in_team:hover
+{
+	cursor:pointer;
+}
+
+
+.active > a,.active > a:focus,.active > a:hover,.active > span,.active > span:focus,.active > span:hover {
+    background-color: orange;
+    border-color: orange;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/loader-128x/Preloader_3.gif) center no-repeat #fff;
+}
+
+
+
+#lightbox .modal-content {
+    display: inline-block;
+    text-align: center;   
+}
+
+#lightbox .close {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: -15px;
+    right: -55px;
+    
+    z-index:1032;
+}
